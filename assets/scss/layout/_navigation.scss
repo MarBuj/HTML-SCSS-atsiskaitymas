@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    display: block;
+  }
+  &__link {
+    text-decoration: none;
+    padding: 0 rem(10);
+    @include small;
+    color: $primary;
+    transition: 0.7s;
+    &:hover {
+      background-color: $lightgrey;
+      color: $white;
+      border-radius: rem(4);
+    }
+  }
+}

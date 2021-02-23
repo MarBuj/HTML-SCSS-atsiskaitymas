@@ -1,0 +1,29 @@
+.card {
+  width: 33.33%;
+  margin-top: rem(30);
+  display: flex;
+  &__img {
+    display: block;
+    align-self: center;
+    height: rem(80);
+    width: rem(80);
+  }
+  &__content {
+    padding: rem(8) rem(0) rem(6) rem(20);
+    &__h3 {
+      margin: 0;
+      @include h3;
+    }
+    &__text {
+      @include small;
+      color: $lightgrey;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .card {
+    width: 100%;
+    margin-top: rem(16);
+  }
+}

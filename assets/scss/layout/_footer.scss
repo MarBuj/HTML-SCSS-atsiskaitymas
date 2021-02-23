@@ -1,0 +1,13 @@
+footer {
+  border-top: 2px solid #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: $sm) {
+  footer {
+    display: block;
+    padding-top: rem(14);
+  }
+}

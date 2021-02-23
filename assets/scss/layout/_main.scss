@@ -1,0 +1,61 @@
+.main {
+  display: flex;
+  margin-bottom: rem(144);
+  .main-content {
+    width: 52%;
+    display: block;
+    align-self: center;
+    order: 1;
+    &__title {
+      @include title;
+      margin-bottom: rem(22);
+    }
+    &__h1 {
+      width: rem(385);
+      @include h1;
+      margin-bottom: rem(26);
+      margin-top: 0;
+    }
+    &__info {
+      width: rem(470);
+      @include text;
+      margin-bottom: rem(35);
+    }
+  }
+  img {
+    width: 48%;
+    max-height: rem(464);
+    display: block;
+    order: 2;
+  }
+}
+
+@media (max-width: $sm) {
+  .main {
+    display: block;
+    margin-bottom: rem(80);
+    .main-content {
+      width: 100%;
+      display: block;
+      order: 2;
+      &__title {
+        margin-bottom: rem(20);
+      }
+      &__h1 {
+        @include h1-mobile;
+        width: rem(305);
+        margin-bottom: rem(28);
+      }
+      &__info {
+        width: 100%;
+        margin-bottom: rem(32);
+      }
+    }
+    img {
+      width: 100%;
+      display: block;
+      max-height: rem(268);
+      order: 1;
+    }
+  }
+}
